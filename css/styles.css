@@ -3,6 +3,7 @@
   --menu-color: #212121;
   --dark-background: #2f303a;
   --content-color: #757575;
+  --features-color: #f5f4fa;
 }
 img {
   display: block;
@@ -10,6 +11,8 @@ img {
   width: 100%;
 }
 a {
+  margin: 0;
+  padding: 0;
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 ul {
@@ -128,8 +131,15 @@ body {
 .c-flex:last-child {
   margin-right: 0;
 }
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .contact-menu {
+  display: flex;
   color: var(--content-color);
+  padding: 32px 0 32px 0;
+  align-items: center;
 }
 .main-menu:focus,
 .contact-menu:focus {
@@ -148,9 +158,20 @@ body {
   padding-bottom: 93px;
 }
 .hero-section {
-  background-color: var(--dark-background);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #c4c4c4;
 }
 .container.hero {
   text-align: center;
@@ -172,6 +193,15 @@ body {
 }
 .mod {
   padding-bottom: 0;
+}
+.icon-features {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--features-color);
 }
 .features-flex {
   display: flex;
@@ -225,7 +255,7 @@ body {
 }
 .content-item {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .team-content {
   margin-top: 10px;
@@ -234,6 +264,76 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--content-color);
+}
+.icontt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px 30px 32px;
+}
+.icon-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.icon-item {
+  display: flex;
+  color: #afb1b8;
+  align-items: center;
+  justify-items: center;
+  margin-right: 10px;
+  padding: 15px;
+}
+.icon-team:focus,
+.icon-team:hover {
+  background-color: var(--lg-color);
+  border-radius: 50%;
+}
+.icon-item:focus,
+.icon-item:hover {
+  color: #ffffff;
+}
+.icon-item:last-child {
+  margin-right: 0;
+}
+.social {
+  fill: currentColor;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.icon-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  margin-right: 29px;
+}
+.icon-client:last-child {
+  margin-right: 0;
+}
+.icon-client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  color: #afb1b8;
+  padding: 50px;
+}
+.icon-client-item:focus,
+.icon-client-item:hover {
+  color: var(--lg-color);
+}
+.cl-icon {
+  fill: currentColor;
 }
 .footer {
   background-color: var(--dark-background);
