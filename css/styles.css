@@ -31,6 +31,9 @@ h3,
 p {
   margin: 0;
 }
+section {
+  display: block;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -243,6 +246,9 @@ body {
 .team-item {
   background-color: #ffffff;
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:last-child {
   margin-right: 0;
@@ -317,6 +323,11 @@ body {
   border: 1px solid #afb1b8;
   margin-right: 29px;
 }
+.icon-client:focus,
+.icon-client:hover {
+  border: 1px solid var(--lg-color);
+  color: var(--lg-color);
+}
 .icon-client:last-child {
   margin-right: 0;
 }
@@ -343,12 +354,58 @@ body {
 .addsize {
   margin: 20px 0 0 0;
 }
+.container.footer-flex {
+  display: flex;
+}
+.footer-sec-soc {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.foot {
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
 .footer-menu {
   color: #ffffff;
 }
 .footer-menu-more {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-icontt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.icon-item-footer {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-item-footer:focus,
+.icon-item-footer:hover {
+  background-color: var(--lg-color);
+  border-radius: 50%;
+}
+.icon-item-footer:focus,
+.icon-item-footer:hover {
+  color: #ffffff;
+}
+.icon-item-footer:last-child {
+  margin-right: 0;
 }
 .add-item {
   margin-top: 9px;
@@ -404,16 +461,24 @@ body {
   color: #ffffff;
   background-color: var(--lg-color);
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .port-btn:hover {
   color: #ffffff;
   background-color: var(--lg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .port-btn:focus {
   color: #ffffff;
   background-color: var(--lg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .port-btn:active {
   color: #ffffff;
@@ -435,6 +500,11 @@ body {
 .port-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.port-item:focus,
+.port-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .port-header {
   font-weight: 700;
   font-size: 18px;
@@ -451,4 +521,6 @@ body {
 .port-div {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
