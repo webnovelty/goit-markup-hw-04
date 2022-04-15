@@ -140,6 +140,7 @@ body {
 }
 .contact-menu {
   display: flex;
+  font-weight: 500;
   color: var(--content-color);
   padding: 32px 0 32px 0;
   align-items: center;
@@ -261,7 +262,7 @@ body {
 }
 .content-item {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 .team-content {
   margin-top: 10px;
@@ -270,30 +271,31 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--content-color);
+  margin-bottom: 16px;
 }
 .icontt {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 32px 30px 32px;
 }
 .icon-team {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
+  margin-right: 10px;
+}
+.icon-team:last-child {
+  margin-right: 0;
 }
 .icon-item {
   display: flex;
   color: #afb1b8;
   align-items: center;
-  justify-items: center;
-  margin-right: 10px;
-  padding: 15px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
-.icon-team:focus,
-.icon-team:hover {
+.icon-item:focus,
+.icon-item:hover {
   background-color: var(--lg-color);
   border-radius: 50%;
 }
@@ -301,33 +303,25 @@ body {
 .icon-item:hover {
   color: #ffffff;
 }
-.icon-item:last-child {
-  margin-right: 0;
-}
+
 .social {
   fill: currentColor;
 }
 .clients {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 50px;
 }
 .icon-client {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  margin-right: 29px;
+  margin-right: 30px;
 }
-.icon-client:focus,
+/* .icon-client:focus,
 .icon-client:hover {
   border: 1px solid var(--lg-color);
   color: var(--lg-color);
-}
+} */
 .icon-client:last-child {
   margin-right: 0;
 }
@@ -335,13 +329,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-items: center;
+  width: 100%;
+  height: 100%;
   color: #afb1b8;
-  padding: 50px;
+  border: 1px solid #afb1b8;
 }
 .icon-client-item:focus,
 .icon-client-item:hover {
   color: var(--lg-color);
+  border: 1px solid var(--lg-color);
 }
 .cl-icon {
   fill: currentColor;
@@ -356,14 +352,13 @@ body {
 }
 .container.footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .footer-sec-soc {
   margin-left: 70px;
-  margin-top: 10px;
 }
 .foot {
   color: #ffffff;
-
   margin-bottom: 20px;
 }
 .footer-menu {
@@ -379,19 +374,20 @@ body {
   justify-content: center;
 }
 .icon-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   margin-right: 10px;
+}
+.icon-footer:last-child {
+  margin-right: 0;
 }
 .icon-item-footer {
   display: flex;
   color: #ffffff;
   align-items: center;
-  justify-items: center;
-  padding: 15px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
@@ -399,13 +395,7 @@ body {
 .icon-item-footer:hover {
   background-color: var(--lg-color);
   border-radius: 50%;
-}
-.icon-item-footer:focus,
-.icon-item-footer:hover {
   color: #ffffff;
-}
-.icon-item-footer:last-child {
-  margin-right: 0;
 }
 .add-item {
   margin-top: 9px;
@@ -492,7 +482,6 @@ body {
 .port-item {
   margin-bottom: 30px;
   margin-right: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 .port-item:nth-child(3n) {
   margin-right: 0;
@@ -500,8 +489,11 @@ body {
 .port-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.port-item:focus,
-.port-item:hover {
+.port-link {
+  display: block;
+}
+.port-link:focus,
+.port-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -519,8 +511,8 @@ body {
   color: var(--content-color);
 }
 .port-div {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
